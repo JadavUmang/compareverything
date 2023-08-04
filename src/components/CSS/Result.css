@@ -1,0 +1,10 @@
+.result__container__light{
+    background-color: rgb(234,237,237);
+}
+.result__row{
+    display: flex;
+    flex-direction: row;
+}
+.result__container__dark{
+    background-color: rgb(81, 87, 87);
+}

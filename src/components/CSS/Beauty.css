@@ -1,0 +1,22 @@
+.Beauty__root{
+    padding: 10px;
+    height:max;
+}
+.Beauty__root__light{
+    background-color: rgb(234,237,237);
+
+}
+.Beauty__root__dark{
+    background-color: rgb(81, 87, 87);
+}
+.Beauty__row{
+    display:flex;
+    z-index:1;
+    margin:0 5px 0 5px;
+}
+.Bueaty__image{
+    width:100%;
+    z-index: -1;
+    margin-bottom:-50px;
+    mask-image:linear-gradient(to bottom,rgba(0,0,0,1), rgba(0,0,0,0));
+}

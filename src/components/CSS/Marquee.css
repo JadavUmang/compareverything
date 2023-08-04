@@ -1,0 +1,21 @@
+.marqueegloble{
+    margin:10px;
+    /* background-color: black; */
+    /* overflow: hidden; */
+}
+
+
+/* .marquee-content{
+    display:inline-block;
+    white-space:nowrap;
+    animation:marquee 20s linear infinite;
+}
+
+@keyframes marquee{
+    0%{
+        transform:translateX(0);
+    }
+    100%{
+        transform:translateX(-100%);
+    }
+} */

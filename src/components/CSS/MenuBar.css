@@ -1,0 +1,47 @@
+.nav{
+    width: 100%;
+    align-items: center;
+    top:0;
+    z-index: 200;
+    position: sticky;
+}
+.size{
+    height: 40px;
+    width:100%;
+}
+.background-light{
+    background-color: aliceblue;
+}
+.background-dark{
+    background-color: #05355c;
+}
+.Linkeleml .Linklemd{
+    text-decoration: none;
+    margin:2px 0px 2px 0px;
+
+}
+.Linkeleml:hover{
+    color:black;
+    font-weight: 600;
+}
+
+.Linkelemd:hover{
+    color:white;
+    font-weight: 600;
+}
+.textw{
+    color:white;
+}
+.textb{
+    color:black;
+}
+.Home__IconWhite{
+    color:white;
+}
+.Home__IconDark{
+    color:black;
+}
+
+.Home__IconWhite:hover{
+    color:black;
+}

@@ -1,0 +1,24 @@
+.home{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0 auto 0 auto;
+    max-width: auto;
+}
+.home__light{
+    background-color: rgb(234,237,237);
+}
+.home__dark{
+    background-color: rgb(81, 87, 87);
+}
+.home__row{
+    display: flex;
+    z-index: 1;
+    margin:0 5px 0 5px;
+}
+.home__image{
+    width:100%;
+    z-index: -1;
+    margin-bottom:-150px;
+    mask-image:linear-gradient(to bottom,rgba(0,0,0,1), rgba(0,0,0,0));
+}

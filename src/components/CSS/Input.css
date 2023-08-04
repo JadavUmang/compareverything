@@ -1,0 +1,35 @@
+.Input__root{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.pidiv{
+    display: flex;
+    flex-direction: row;
+}
+.pidiv > table{
+    margin:10px;
+}
+
+.pidiv > table > tr{
+    margin:10px;
+    padding:10px;
+}
+
+.pidiv > table > tr>td{
+    margin:5px;
+    padding:2.8px;
+}
+.Input__root__light{
+    color:black;
+}
+.Input__root__dark{
+    background-color: #212529;
+    color: white;
+}
+.inputclass{
+    margin:1px 100px 10px 10px;
+    display: flex;
+    flex:1;
+    max-width:500px;
+}

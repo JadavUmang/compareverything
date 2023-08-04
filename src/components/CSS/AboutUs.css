@@ -1,0 +1,46 @@
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.aboutus__data{
+  margin: 10px;
+}
+  .aboutus__data>h1{
+    font-size: 75px;
+    font-weight: 600;
+  }
+  .aboutus__data>p,ul{
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .aboutus__data__light{
+    color: black;
+  }
+  .aboutus__data__dark{
+    color: white;
+  }
+  .about-us-content {
+    max-width: 800px;
+    padding: 50px;
+  }
+  
+  .about-us-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  
+  .about-us-section-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .about-us-section-description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .about-us-content>htmlH1{
+    font-size: 100px;
+    color:aliceblue;
+  }
