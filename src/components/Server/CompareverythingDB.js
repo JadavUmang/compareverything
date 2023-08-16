@@ -95,6 +95,44 @@ app.get('/books',(req,res)=>{
         return res.json(data);
     });
 });
+app.post('/insert', (req,res)=> {
+
+    const pname = req.body.pname;
+    const qty = req.body.qty;
+    const prcamz = req.body.prcamz;
+    const prcflp = req.body.prcflp;
+    const prcls = req.body.prcls;
+    const pimg = req.body.pimg;
+    const pdisc = req.body.pdisc;
+    const ptype = req.body.ptype;
+    const ctgy = req.body.ctgy;
+    const amzlnk = req.body.amzlnk;
+    const flplnk = req.body.flplnk;
+
+    db.query("INSERT INTO product (Pname, Qty,PriceAmazon,PriceFlipkart,PriceLS,PImage,PDisc,PType,Category,AmazonLink,FlipkartLink) VALUES (?,?,?,?,?,?,?,?,?,?,?)",[pname,qty,prcamz,prcflp,prcls,pimg,pdisc,ptype,ctgy,amzlnk,flplnk], (err,res)=>{
+       if(err)return res.json(err); 
+       return res.json(data);
+    });   
+});
+app.post('/edit',(req,res)=>{
+
+    const pid = req.params.pid;
+    const pname = req.body.pname;
+    const qty = req.body.qty;
+    const prcamz = req.body.prcamz;
+    const prcflp = req.body.prcflp;
+    const prcls = req.body.prcls;
+    const pimg = req.body.pimg;
+    const pdisc = req.body.pdisc;
+    const ptype = req.body.ptype;
+    const ctgy = req.body.ctgy;
+    const amzlnk = req.body.amzlnk;
+    const flplnk = req.body.flplnk;
+    db.query("UPDATE product SET Pname = ?, Qty=?, PriceAmazon=?, PriceFlipkart=?,PriceLS=?,PImage=?,PDisc=?,PType=?,Category=?,AmazonLink=?,FlipkartLink=? WHERE Pid = '"+{pid}+"'",[pname,qty,prcamz,prcflp,prcls,pimg,pdisc,ptype,ctgy,amzlnk,flplnk], (err,res)=>{
+        if(err)return res.json(err); 
+       return res.json(data);
+        });    
+    });
 app.listen(3005,()=>{
     console.log("listening");
 })
